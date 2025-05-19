@@ -6,7 +6,7 @@ git push -u origin master
 
 git config --global user.name "Zeydan Çalişkan"
 git config --global user.email "zeydanc3@gmail.com
-git remote set-url origin https://github.com/cyprus-rbg/zeydan
+git remote set-url origin https://github.com/zeydanc1/zeydan
 
 git commit -m "Remove index.html"
 git commit -m "Remove dosya-adi.html"
