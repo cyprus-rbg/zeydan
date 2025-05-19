@@ -1,0 +1,91 @@
+#sertifikalar {
+  background: linear-gradient(135deg, #232d3b, #3a475b); /* Ozet'e daha yakın koyu gri tonlar */
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+  max-width: 720px;
+  margin: 3rem auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #e2e8f0; /* Ozet ile aynı metin rengi */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Ozet ile aynı border rengi */
+  transition: all 0.4s ease-in-out;
+}
+
+#sertifikalar:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+}
+
+#sertifikalar article {
+  background: #2d3748; /* Ozet arka planının bir ton koyusu */
+  border-radius: 16px;
+  padding: 1.6rem 1.6rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.4);
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+  color: #e2e8f0; /* Ozet ile aynı metin rengi */
+}
+
+#sertifikalar article:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+  background: #3a475b; /* Ozet hover arka planına yakın */
+}
+
+#sertifikalar article h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffcc00; /* Ozet başlık rengi */
+  margin-bottom: 0.7rem;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6); /* Ozet başlık text-shadow'u */
+}
+
+#sertifikalar article p {
+  font-size: 1.05rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.7;
+  color: #cbd5e0; /* Ozet paragraf metin rengi */
+}
+
+#sertifikalar article p strong {
+  color: #ffdd33; /* Ozet başlık renginin bir ton açığı */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #sertifikalar {
+    padding: 2rem 1.5rem;
+    margin: 2rem 1.2rem;
+  }
+
+  #sertifikalar h2 {
+    font-size: 2rem;
+  }
+
+  #sertifikalar article h3 {
+    font-size: 1.25rem;
+  }
+
+  #sertifikalar article p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #sertifikalar {
+    padding: 1.5rem 1rem;
+    margin: 1.5rem 1rem;
+  }
+
+  #sertifikalar h2 {
+    font-size: 1.7rem;
+  }
+
+  #sertifikalar article h3 {
+    font-size: 1.1rem;
+  }
+
+  #sertifikalar article p {
+    font-size: 0.95rem;
+  }
+}
