@@ -7,7 +7,6 @@
 @import url('iletisim.css');
 @import url('footer.css');
 @import url('aside.css');
-
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +39,7 @@ header {
   z-index: 9999;
 }
 
-/* Logo ve Açıklama stilleri - Altın tonları */
+/* Logo ve Açıklama stilleri */
 .logo h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -90,7 +89,7 @@ header {
   width: 100%;
 }
 
-/* Profil Girişi stilleri - Altın kenarlık ve belirgin gölge */
+/* Profil stilleri */
 .profile {
   width: 45px;
   height: 45px;
@@ -135,7 +134,7 @@ header {
   transition: all 0.3s ease;
 }
 
-/* Hamburger aktifken (çarpı yapımı) */
+/* Hamburger aktifken (çarpı şekli) */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -149,15 +148,15 @@ header {
 /* Mobil & Tablet Uyum (768px ve altı) */
 @media (max-width: 768px) {
   body {
-    padding-top: 160px; /* Mobil/tablet için header yüksekliği arttı */
+    padding-top: 130px; /* header daha ince, biraz düşürdüm */
   }
 
   header {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.2rem;
-    padding: 1.2rem;
-    position: fixed; /* fixed kalabilir */
+    gap: 1rem; /* biraz sıkıştırdım */
+    padding: 0.8rem 1.2rem; /* daha ince padding */
+    position: fixed;
   }
 
   /* Hamburger görünür */
@@ -178,7 +177,7 @@ header {
 
   /* Menü açıkken */
   .main-menu.open {
-    max-height: 400px; /* Menü içeriğine göre ayarlayabilirsin */
+    max-height: 400px; /* Menü içeriğine göre ayarla */
   }
 
   .main-menu ul {
@@ -192,3 +191,4 @@ header {
     align-self: flex-end;
   }
 }
+
