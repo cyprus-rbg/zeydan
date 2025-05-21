@@ -7,7 +7,6 @@
 @import url('iletisim.css');
 @import url('footer.css');
 @import url('aside.css');
-
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,7 @@
 
 /* Body stilleri */
 body {
-  padding-top: 100px; /* Desktop için header yüksekliği */
+  padding-top: 100px;
   font-family: "Roboto", sans-serif;
   background: #1a1a1a;
   color: #eee;
@@ -40,7 +39,7 @@ header {
   z-index: 9999;
 }
 
-/* Logo ve Açıklama stilleri - Altın tonları */
+/* Logo */
 .logo h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -54,7 +53,7 @@ header {
   margin-top: 5px;
 }
 
-/* Menü stilleri */
+/* Menü */
 .main-menu ul {
   list-style: none;
   display: flex;
@@ -70,7 +69,6 @@ header {
   transition: color 0.4s ease;
 }
 
-/* Menü alt çizgi animasyonu */
 .main-menu a::after {
   content: '';
   position: absolute;
@@ -90,7 +88,7 @@ header {
   width: 100%;
 }
 
-/* Profil Girişi stilleri */
+/* Profil */
 .profile {
   width: 45px;
   height: 45px;
@@ -113,7 +111,7 @@ header {
   box-shadow: 0 0 15px rgba(255, 193, 7, 0.7);
 }
 
-/* Hamburger buton stilleri */
+/* Hamburger buton */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -146,11 +144,10 @@ header {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Mobil & Tablet Uyum (768px ve altı) */
-
+/* Mobil & Tablet için */
 @media (max-width: 768px) {
   body {
-    padding-top: 80px; /* Daha ince header için azaltıldı */
+    padding-top: 80px;
   }
 
   header {
@@ -159,7 +156,7 @@ header {
     justify-content: space-between;
     padding: 0.5rem 1rem;
     gap: 0;
-    height: 60px; /* Daha ince header */
+    height: 60px;
   }
 
   .logo {
@@ -190,7 +187,6 @@ header {
     margin-right: 10px;
     margin-top: 0;
     padding: 5px;
-    z-index: 10000;
   }
 
   .main-menu {
@@ -201,7 +197,7 @@ header {
     background: #2b2b2b;
     border-top: 1px solid #444;
     position: absolute;
-    top: 60px; /* header’ın hemen altına */
+    top: 60px;
     left: 0;
   }
 
