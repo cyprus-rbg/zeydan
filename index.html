@@ -49,16 +49,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
-
-  <header>
+<script src="hamburger.js" defer></script>
+ <header>
   <div class="logo">
     <h1>Zeydan Çalışkan</h1>
     <p>Yazılım Mühendisliği Öğrencisi | Duygusal Zeka & Teknoloji | Kültürel Etkileşimler</p>
   </div>
-  
+
+  <!-- Hamburger butonu -->
+  <button class="hamburger" aria-label="Menu Toggle" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
   <nav class="main-menu">
     <ul>
       <li><a href="#ozet">Hakkımda</a></li>
@@ -69,13 +77,13 @@
       <li><a href="#etkinlikler">Etkinlikler</a></li>
       <li><a href="#iletisim">İletişim</a></li>
     </ul>
-    
   </nav>
+
   <div class="profile">
     <img src="zeydan.jpg" alt="Profil">
   </div>
-
 </header>
+
   <main>
 
     <section id="ozet">
@@ -173,8 +181,6 @@
   </div>
 
 </section>
-
-
 
     <section id="iletisim">
       <h2>İletişim</h2>
