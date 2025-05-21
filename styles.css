@@ -9,7 +9,6 @@
 @import url('aside.css');
 
 /* Temel reset */
-
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +17,7 @@
 
 /* Body stilleri */
 body {
-  padding-top: 100px; /* header yüksekliğine göre ayarla */
+  padding-top: 100px; /* Desktop için header yüksekliği */
   font-family: "Roboto", sans-serif; 
   background: #1a1a1a; 
   color: #eee; 
@@ -41,7 +40,6 @@ header {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); 
   z-index: 9999;      /* Üstte görünmesi için */
 }
-
 
 /* Logo ve Açıklama stilleri - Altın tonları */
 .logo h1 {
@@ -116,8 +114,12 @@ header {
   box-shadow: 0 0 15px rgba(255, 193, 7, 0.7); 
 }
 
-/* Mobil & Tablet Uyum (768px ve altı) - Aynı yapı korunabilir */
+/* Mobil & Tablet Uyum (768px ve altı) */
 @media (max-width: 768px) {
+  body {
+    padding-top: 160px; /* Mobil/tablet için header yüksekliği arttı */
+  }
+
   header {
     flex-direction: column; 
     align-items: flex-start; 
@@ -138,6 +140,3 @@ header {
     align-self: flex-end; 
   }
 }
-
-
-
