@@ -3,9 +3,11 @@
 @import url('calismalar.css');
 @import url('akedemik-yayinlar.css');
 @import url('basarilar.css');
+@import url('etkinlikler.css');
 @import url('iletisim.css');
 @import url('footer.css');
 @import url('aside.css');
+
 /* Temel reset */
 /* Global sıfırlama */
 * {
