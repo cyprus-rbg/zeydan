@@ -1,91 +1,91 @@
+/* Genel yapı */
 #sertifikalar {
-  background: linear-gradient(135deg, #232d3b, #3a475b); /* Ozet'e daha yakın koyu gri tonlar */
-  padding: 2.5rem 2rem;
-  border-radius: 20px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
-  max-width: 720px;
-  margin: 3rem auto;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #e2e8f0; /* Ozet ile aynı metin rengi */
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Ozet ile aynı border rengi */
-  transition: all 0.4s ease-in-out;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #1e293b, #334155);
+  color: #f1f5f9;
+  font-family: "Segoe UI", sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
-#sertifikalar:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.5);
+/* Başlık */
+#sertifikalar h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  color: #facc15;
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-#sertifikalar article {
-  background: #2d3748; /* Ozet arka planının bir ton koyusu */
-  border-radius: 16px;
-  padding: 1.6rem 1.6rem;
+/* Sertifika Kartı */
+.sertifika-karti {
+  background-color: #475569;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
   margin-bottom: 2rem;
-  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.4);
-  transition: box-shadow 0.4s ease, transform 0.4s ease;
-  color: #e2e8f0; /* Ozet ile aynı metin rengi */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#sertifikalar article:hover {
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-  transform: translateY(-5px);
-  background: #3a475b; /* Ozet hover arka planına yakın */
+.sertifika-karti:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
 }
 
-#sertifikalar article h3 {
+/* Metin kısmı */
+.sertifika-karti .metin h3 {
+  color: #facc15;
   font-size: 1.4rem;
-  font-weight: 700;
-  color: #ffcc00; /* Ozet başlık rengi */
+  margin-bottom: 0.6rem;
+}
+
+.sertifika-karti .metin p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #e2e8f0;
   margin-bottom: 0.7rem;
-  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6); /* Ozet başlık text-shadow'u */
 }
 
-#sertifikalar article p {
-  font-size: 1.05rem;
-  margin-bottom: 0.7rem;
-  line-height: 1.7;
-  color: #cbd5e0; /* Ozet paragraf metin rengi */
+/* Görsel kısmı */
+.sertifika-karti .gorsel img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #cbd5e1;
+  border-radius: 8px;
 }
 
-#sertifikalar article p strong {
-  color: #ffdd33; /* Ozet başlık renginin bir ton açığı */
-}
+/* Responsive Ayarlar */
+@media (min-width: 768px) {
+  .sertifika-karti {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
 
-/* Responsive */
-@media (max-width: 768px) {
-  #sertifikalar {
-    padding: 2rem 1.5rem;
-    margin: 2rem 1.2rem;
+  .sertifika-karti .metin {
+    flex: 1;
+  }
+
+  .sertifika-karti .gorsel {
+    flex: 1;
+  }
+
+  .sertifika-karti .gorsel img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
   }
 
   #sertifikalar h2 {
-    font-size: 2rem;
+    font-size: 2.6rem;
   }
 
-  #sertifikalar article h3 {
-    font-size: 1.25rem;
-  }
-
-  #sertifikalar article p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #sertifikalar {
-    padding: 1.5rem 1rem;
-    margin: 1.5rem 1rem;
-  }
-
-  #sertifikalar h2 {
-    font-size: 1.7rem;
-  }
-
-  #sertifikalar article h3 {
-    font-size: 1.1rem;
-  }
-
-  #sertifikalar article p {
-    font-size: 0.95rem;
+  .sertifika-karti .metin h3 {
+    font-size: 1.6rem;
   }
 }
